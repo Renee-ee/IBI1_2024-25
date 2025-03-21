@@ -1,3 +1,8 @@
+#give the weight into w
+#give the height into h
+#calculate bmi
+#print bmi
+#print suggestion
 w = 55
 h = 1.6
 bmi = w/h**2
