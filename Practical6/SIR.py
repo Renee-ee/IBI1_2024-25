@@ -44,6 +44,7 @@ plt.ylabel("number of people")
 plt.title("SIR model")
 plt.legend() #add legend
 plt.show()
+
 #save the plot as a file
 plt.figure(figsize =(6,4),dpi=150) # set your plots as a file with this dimensions and resolution
 plt.savefig("<SIR>", type="png")
