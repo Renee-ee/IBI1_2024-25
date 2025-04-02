@@ -1,5 +1,5 @@
 # What does this piece of code do?
-# Answer: Calculate how many times did we use to make two random number from 1 to 6 the same.
+# Answer: it compares two randomly generated numbers between 1 and 6 until they match, and output the time they use to match
 
 # Import libraries
 # randint allows drawing a random number,
