@@ -1,0 +1,6 @@
+In this practicle, I got the use of md file.
+Also, I get more familiar with GitHub about how to learn from others' code and files, which is important for my further study and let me into the family and community of programming.
+There was also some difficult when I merge branch into the master branch, but this let me really know how does git branch and merge work.
+
+Generally, this practicle help me get familiar with the commit we learnt this week so that I can remember them but not with reciting.
+It also let me know the function and usage of git while actually use it.
