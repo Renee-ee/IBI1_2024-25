@@ -3,8 +3,8 @@
 #calculate bmi
 #print bmi
 #print suggestion
-w = 55
-h = 1.6
+w = 55 #a person’s weight (in kg)
+h = 1.6 #a person’s height (in m).
 bmi = w/h**2
 print ("Your bmi is" , str(bmi))
 if bmi > 30: 
