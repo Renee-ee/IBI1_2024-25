@@ -24,27 +24,27 @@ gamma = 0.05 # recovery probability
 for t in range (1,101):
     # infect the neighbours
     infected = np.where(population == 1) # find the infected points
-    print (type(infected))
-    print (infected)
     for i in range(len(infected[0])):
         infected_x = infected[0][i]
         infected_y = infected[1][i]
+        # Check all 8 neighboring cells
         for x in range(infected_x -1, infected_x +2):
             for y in range(infected_y -1, infected_y +2):
                 if 0 <= x < 100 and 0 <= y < 100 and population [x,y] == 0:
-                    a=np.random.choice ([0,1],p=[1-beta, beta]) # choose number from range(2) (i.e. 0 or 1) once, with a probability of (1-beta) of choosing 0 and a probability of beta of choosing 1
+                    # randomly infect
+                    a=np.random.choice ([0,1],p=[1-beta, beta])
                     if a == 1:
                         population [x,y] = 1
-    #allow infected individuals to recover
+    # allow infected individuals to recover
     new_infected = np.where(population == 1)
     for i in range(len(new_infected[0])):
         infected_x = new_infected[0][i]
         infected_y = new_infected[1][i]
+        # randomly recover
         b=np.random.choice ([0,1],p=[1-gamma, gamma])
         if b == 1:
             population [infected_x,infected_y] = 2
     if t==10 or t==50 or t==100:
-        print (0)
         plt.figure (figsize =(6,4),dpi=150)
         plt.imshow (population , cmap='viridis', interpolation='nearest')
         plt.show()
