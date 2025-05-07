@@ -16,13 +16,13 @@ arr_S = array.array('i', [S])
 arr_R = array.array('i', [R])
 
 for n in range (1,1001):
-    #pick susceptible individuals at random to become infected
+    #pick susceptible individuals in susceptible people at random (in probability of beta) to become infected
     I_add = 0
     for i in range (0,S):
-        a=np.random.choice (range(2),1,p=[1-beta, beta])
+        a=np.random.choice (range(2),1,p=[1-beta, beta]) # choose number from range(2) (i.e. 0 or 1) once, with a probability of (1-beta) of choosing 0 and a probability of beta of choosing 1
         if a == 1:
             I_add += 1
-    #pick infected individuals at random to become recovered
+    #pick infected individuals in infected people at random (in probability of gamma) to become recovered
     I_minus = 0
     for i in range (0,I):
         b=np.random.choice (range(2),1,p=[1-gamma, gamma])
@@ -31,9 +31,10 @@ for n in range (1,1001):
             R += 1
     I = I + I_add - I_minus
     S = P-R-I
-    arr_S.append(S) # Add element
-    arr_I.append(I) # Add element
-    arr_R.append(R) # Add element
+    # Add elements for plot
+    arr_S.append(S) 
+    arr_I.append(I)
+    arr_R.append(R)
 
 #plot the result
 plt.plot(time, arr_S, label="Susceptible", color="blue") #Susceptible in blue
