@@ -19,13 +19,13 @@ for n in range (1,1001):
     #pick susceptible individuals in susceptible people at random (in probability of beta) to become infected
     I_add = 0
     for i in range (0,S):
-        a=np.random.choice (range(2),1,p=[1-beta, beta]) # choose number from range(2) (i.e. 0 or 1) once, with a probability of (1-beta) of choosing 0 and a probability of beta of choosing 1
+        a=np.random.choice ([0, 1],p=[1-beta, beta]) # choose number from range(2) (i.e. 0 or 1) once, with a probability of (1-beta) of choosing 0 and a probability of beta of choosing 1
         if a == 1:
             I_add += 1
     #pick infected individuals in infected people at random (in probability of gamma) to become recovered
     I_minus = 0
     for i in range (0,I):
-        b=np.random.choice (range(2),1,p=[1-gamma, gamma])
+        b=np.random.choice ([0, 1],p=[1-gamma, gamma])
         if b == 1:
             I_minus += 1
             R += 1
