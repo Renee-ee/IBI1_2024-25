@@ -1,6 +1,7 @@
 #import neccessary libraries
 import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib import cm # color map (for the plot)
 
 P = 10000 #population
 I = 1 #infected
@@ -23,21 +24,23 @@ for m in range(0,11):
         #pick susceptible individuals at random to become infected
         I_add = 0
         for i in range (0,S):
-            a=np.random.choice (range(2),1,p=[1-beta, beta])
+            a=np.random.choice ([0,1],p=[1-beta, beta])
             if a == 1:
                 I_add += 1
         #pick infected individuals at random to become recovered
         I_minus = 0
         for i in range (0,I):
-            b=np.random.choice (range(2),1,p=[1-gamma, gamma])
+            b=np.random.choice ([0,1],p=[1-gamma, gamma])
             if b == 1:
                 I_minus += 1
                 R += 1
         I = I + I_add - I_minus
         S = P-I-R-V
         arr_I.append(I) # Add element
-    #list[m] = arr_I
-    plt.plot(time, arr_I, label= str(alpha[m])+"%", color=colors[m])
+    s=30
+    plt.plot(time, arr_I, label= str(alpha[m])+"%", color= colors[m])
+    #plt.plot(time, arr_I, label= str(alpha[m])+"%", color=cm.viridis(s)) # plots the dataset using colour number 30 (a sort of blue) from the viridis colour map.
+    s+=30
     arr_I = array.array('i', [1])
 
 plt.xlabel("time")
@@ -48,6 +51,6 @@ plt.show()
 
 #save the plot as a file
 plt.figure(figsize =(6,4),dpi=150) # set your plots as a file with this dimensions and resolution
-plt.savefig("<SIR>", type="png")
+plt.savefig("<SIR_vaccination>", type="png")
 # !!!Note that Python is not necessarily saving images in the same directory that your python scripts are in.
 # !!!You can get around it by specifying the full le path as <filename>
