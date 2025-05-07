@@ -37,10 +37,8 @@ for m in range(0,11):
         I = I + I_add - I_minus
         S = P-I-R-V
         arr_I.append(I) # Add element
-    s=30
     plt.plot(time, arr_I, label= str(alpha[m])+"%", color= colors[m])
-    #plt.plot(time, arr_I, label= str(alpha[m])+"%", color=cm.viridis(s)) # plots the dataset using colour number 30 (a sort of blue) from the viridis colour map.
-    s+=30
+    #plt.plot(time, arr_I, label= str(alpha[m])+"%", color=cm.viridis(30)) # plots the dataset using colour number 30 (a sort of blue) from the viridis colour map.
     arr_I = array.array('i', [1])
 
 plt.xlabel("time")
