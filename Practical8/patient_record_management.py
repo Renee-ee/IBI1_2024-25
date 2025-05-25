@@ -1,16 +1,16 @@
 class patient:
-    def __init__ (self, name, age, date, medical):
+    def __init__ (self, name, age, date, history):
         self.name = name
         self.age = age
         self.date = date
-        self.medical = medical
+        self.history = history
     def pri(self):
-        print ("Individual's name:", self.name, '/n',"Age:", self.age, "Date of latest admission:", self.date, "Medical history:", self.medical)
+        print ("Patient name:", self.name,'|', "Age:", self.age,'|', "Date of latest admission:", self.date,'|', "Medical history:", self.history)
 
-#name = 1212
+#name = Resoo
 #age = 20
 #date = "2020.1.2"
-#medical = "cold"
-patient1= patient("Resoo", 20, "2020.1.2", "cold")
+#history = "cold"
 
+patient1= patient("Resoo", 20, "2020.1.2", "cold")
 patient1.pri()
