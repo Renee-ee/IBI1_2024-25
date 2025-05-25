@@ -32,7 +32,7 @@ for one_gene in GENE_list:
 
     #Search for TATA_box
     if tata_pattern.search(sequence):
-        output.write('>'+ gene_name +'\n') # the	header line containing only the gene name
+        output.write('>'+ gene_name +'\n') # the header line containing only the gene name
         for i in range(0, len(sequence), 150):
             output.write(sequence[i:i+150] + '\n') # Note that the sequences for each gene run onto several lines.	
 
