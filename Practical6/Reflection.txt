@@ -1,0 +1,11 @@
+Was it easy or hard?
+Some parts were easy, and some were hard.
+Setting up the initial parameters and plotting was easy; 
+but the spatial modeling infection spread and recovery was hard.
+
+Which parts did you enjoy more or less?
+I enjoyed seeing the spatial SIR model visualized with disease spreading, it's so interesting;
+But I met much trouble when coloring the vaccination spacial model, because the defalt color was hard to tell between 2 and 3, making me thought my code was wrong but actually it was just the unclear colors.
+
+What was the most important thing you learned?
+I learned how to modelling infections for visulization, which is helpful for predicting and controlling some infections.
