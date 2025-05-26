@@ -1,0 +1,11 @@
+How has the relationship between the DALYs in China and the UK changed over time?
+Are they becoming more similar, less similar?
+
+Code line number where start answering: 84
+
+Discussion:
+The plotted trends show that DALYs in both China and the UK have generally declined over time.
+The absolute difference between their DALYs has also decreased, especially after the year 2000.
+
+This suggests that the two countries are becoming more similar in terms of total health burden.
+Possible reasons may include China's improving healthcare system, increased life expectancy, and better disease prevention measures narrowing the gap with the UK.
