@@ -24,12 +24,11 @@ while c<=vaccination:
         c += 1
 
 # color the heat map
-# 0 = purple (susceptible), 1 = teal (infected), 2 = yellow (recovered), 3 = light green (vaccinated)
 cmap = ListedColormap([
-    'purple',    # 0
-    'teal',      # 1
-    'yellow',    # 2
-    'lightgreen' # 3
+    'purple',    # 0 (susceptible)
+    'teal',      # 1 (infected)
+    'yellow',    # 2 (recovered)
+    'lightgreen' # 3 (vaccinated)
 ])
 plt.figure (figsize =(6,4),dpi=150)
 plt.imshow(population, cmap=cmap, interpolation='nearest')
