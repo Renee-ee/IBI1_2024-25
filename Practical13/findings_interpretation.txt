@@ -1,0 +1,14 @@
+Length: 222 
+Subcellular	localisation: Mitochondrion matrix
+
+Range of percentage identities in the reported online BLAST results: 
+58.1% ~ 100.0%
+
+Alignment score:
+Percentage of identical amino acids:
+Human-Mouse: Alignment score=1097, Percentage of identity=90.09%
+Human-Random: Alignment score=-179, Percentage of identity=5.86%
+Mouse-Random: Alignment score=-182, Percentage of identity=5.41%
+ 
+Which of these two sequences are most closely related:
+Human-Mouse
