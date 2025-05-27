@@ -1,7 +1,7 @@
 How has the relationship between the DALYs in China and the UK changed over time?
 Are they becoming more similar, less similar?
 
-Code line number where start answering: 84
+Code line number where start answering custom question: 81
 
 Discussion:
 The plotted trends show that DALYs in both China and the UK have generally declined over time.

@@ -82,7 +82,7 @@ plt.show()
 # Answer custom question
 # Question: How has the relationship between the DALYs in China and the UK changed over time?
 #           Are they becoming more similar, less similar?
-# Line number for question.txt = 84
+# Line number for question.txt = 81
 # -----------------------
 # Filter data for China and UK
 china = dalys_data[dalys_data["Entity"] == "China"]
