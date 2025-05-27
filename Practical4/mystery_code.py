@@ -1,5 +1,5 @@
 # What does this piece of code do?
-# Answer: it compares two randomly generated numbers between 1 and 6 until they match, and output the time they use to match
+# Answer: it compares two randomly generated numbers between 1 and 6 until they match, and output how many iterations it takes to match those two
 
 # Import libraries
 # randint allows drawing a random number,
