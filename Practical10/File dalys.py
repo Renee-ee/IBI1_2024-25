@@ -15,10 +15,10 @@ dalys_data = pd.read_csv("dalys-rate-from-all-causes.csv")
 # -----------------------
 column3 = dalys_data.iloc[0:10, 2]
 print("First 10 values of the 'Year' column:")
-print(column3)
+print(column3,'\n')
 # COMMENT: The 10th year with DALYs data recorded in Afghanistan is 1999
 afghanistan = dalys_data[dalys_data["Entity"] == "Afghanistan"]
-print("10th year with DALYs data for Afghanistan:", afghanistan.iloc[9, 2])
+print("10th year with DALYs data for Afghanistan:", afghanistan.iloc[9, 2],'\n')
 
 
 # -----------------------
@@ -33,7 +33,7 @@ for y in year:
     else:
         my_raws.append(False)
 print("DALYs for all countries in 1990:")
-print(dalys_data.loc[my_raws,"DALYs"]) # every row where Year is 1990
+print(dalys_data.loc[my_raws,"DALYs"],'\n') # every row where Year is 1990
 
 
 # -----------------------
@@ -44,6 +44,9 @@ france = dalys_data.loc[dalys_data.Entity=="France", ["DALYs", "Year"]]
 
 uk_mean = uk['DALYs'].mean() # Calculate mean DALYs
 france_mean = france['DALYs'].mean()
+
+print('UK mean DALYs: ', uk_mean)
+print('France mean DALYs: ', france_mean)
 
 if uk_mean > france_mean: # Compare means
     print("UK has higher mean DALYs than France")
