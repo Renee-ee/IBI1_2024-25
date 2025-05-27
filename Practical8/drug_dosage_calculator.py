@@ -9,7 +9,7 @@ def drug (w,s):
     vol = (dose_mg / s) * 5 
     return vol
 
-w = 26 #get the weight
+w = 45 #get the weight
 s = 120 #get the strength of paracetamol:120 for 120mg/5ml or 250 for 250mg/5ml
 
 print(drug (w,s))
