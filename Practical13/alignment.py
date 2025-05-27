@@ -32,17 +32,12 @@ def align(seq1, seq2):
     percent_identity = (identical / len(seq1)) * 100
     return score, percent_identity
 
-def edit_distance(seq1, seq2):
-    edit_distance= 0 # set initial distance as zero
-    for i in range(len(seq1)): # compare each amino acid
-        if seq1[i] != seq2[i]:
-            edit_distance += 1 # add a score 1 if amino acids are different
-    return(edit_distance)
-        
+
+# use the function to calculate        
 human_mouse = align(seq_human,seq_mouse)
 human_random = align (seq_human,seq_random)
 mouse_random = align (seq_mouse,seq_random)
-
+# get score and pecentage seperately
 human_mouse_score = human_mouse[0]
 human_mouse_identical = human_mouse[1]
 human_random_score = human_random[0]
