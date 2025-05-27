@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 # make array of all susceptible population
 population = np. zeros( (100, 100) )
-# 0/dark purple for susceptible, 1/lue-green for infected, 2/yellow for recovered
+# 0/dark purple for susceptible, 1/blue-green for infected, 2/yellow for recovered
 
 # choose one random point in our 100 100 array for where the outbreak happens
 outbreak = np.random. choice(range(100) ,2)
@@ -44,6 +44,7 @@ for t in range (1,101):
         b=np.random.choice ([0,1],p=[1-gamma, gamma])
         if b == 1:
             population [infected_x,infected_y] = 2
+    # Plot at t=10, 50, 100
     if t==10 or t==50 or t==100:
         plt.figure (figsize =(6,4),dpi=150)
         plt.imshow (population , cmap='viridis', interpolation='nearest')

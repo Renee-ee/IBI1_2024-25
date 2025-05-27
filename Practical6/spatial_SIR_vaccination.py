@@ -59,6 +59,7 @@ for t in range (1,101):
         b=np.random.choice ([0,1],p=[1-gamma, gamma])
         if b == 1:
             population [infected_x,infected_y] = 2
+    # Plot at t=10, 50, 100
     if t==10 or t==50 or t==100:
         plt.figure (figsize =(6,4),dpi=150)
         plt.imshow(population, cmap=cmap, interpolation='nearest')
