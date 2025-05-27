@@ -26,7 +26,7 @@ for one_gene in GENE_list:
         continue  # skip empty pieces
 
     # Extract gene name (before "_mRNA")
-    match = re.search(r'^(\S+?)_mRNA', one_gene)
+    match = re.search(r'gene:(\S+)', one_gene)
     if match:
         gene_name = match.group(1)
     else:
