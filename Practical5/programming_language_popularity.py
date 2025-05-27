@@ -1,5 +1,5 @@
 #firstly put all the data into a dictionary lan
-lan = {'JavaScipt': 62.3, 'HTML': 52.9, 'Python': 51, 'SQL': 51, "TypeScript": 38.5 }
+lan = {'JavaScript': 62.3, 'HTML': 52.9, 'Python': 51, 'SQL': 51, "TypeScript": 38.5 }
 print (lan)
 
 #use the matplot to draw a plot
