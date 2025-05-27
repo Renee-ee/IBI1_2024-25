@@ -1,4 +1,4 @@
-Length: 222 
+Length: 222 amino acids
 Subcellular	localisation: Mitochondrion matrix
 
 Range of percentage identities in the reported online BLAST results: 
