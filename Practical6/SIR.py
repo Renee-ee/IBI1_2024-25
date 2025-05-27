@@ -48,6 +48,6 @@ plt.show()
 
 #save the plot as a file
 plt.figure(figsize =(6,4),dpi=150) # set your plots as a file with this dimensions and resolution
-plt.savefig("<SIR>", type="png")
+plt.savefig("SIR.png")
 # !!!Note that Python is not necessarily saving images in the same directory that your python scripts are in.
 # !!!You can get around it by specifying the full le path as <filename>
